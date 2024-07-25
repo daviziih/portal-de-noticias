@@ -53,5 +53,30 @@ img {
 }
 
 main {
-  margin-top: 40px;
+  margin-block: 40px;
+  row-gap: 80px;
+  column-gap: 32px;
+
+  grid-template-columns: 2fr 1.4fr;
+
+  grid-template-areas:
+    'featured featured'
+    'weekly weekly'
+    'ia aside';
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  color: var(--text-color-primary);
+
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
 }
